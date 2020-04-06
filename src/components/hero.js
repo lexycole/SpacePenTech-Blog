@@ -65,7 +65,7 @@ const Hero = () => {
                   css`
                   color: #ffffff;";
                   `
-                }>SpacePenTech Company + Gatsby &hearts;</h1>
+                }>SpacePenTech Company</h1>
                 <p>
                   Hello Minnesota! <Link to="/about/">Learn about us &rarr;</Link>
                 </p>

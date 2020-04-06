@@ -15,7 +15,6 @@ const NavLink = styled(Link) `
     &.current-page {
         border-bottom:2px solid #222;
     }
-
     &:last-of-type{
         margin-right:0;
     }
@@ -28,12 +27,10 @@ const Header = () => (
     border-bottom: 1px solid  #ddd;
     display:flex;
     justify-content:space-between;
-    padding: 0.5rem 5vw;
-
-    
     `}>
-       <NavLink to="/" fontWeight="bold">SpacePenTech </NavLink>
-        <nav css={css`margin-top:0`}>
+       <NavLink to="/" fontWeight="bold">SpacePenTech</NavLink>
+        <nav css={css`margin: 0;display:flex;
+    justify-content:space-between;`}>
             <NavLink to="/" activeClassName="current-page">Home</NavLink>
             <NavLink to="/about/" activeClassName="current-page">About Us</NavLink>
             <NavLink to="/contact/" activeClassName="current-page">Contact</NavLink>
