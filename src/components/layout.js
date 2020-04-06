@@ -15,17 +15,15 @@ const Layout = ({ children }) => {
         box-sizing: border-box;
         margin:0;
     }
-    * + *{
-        margin-top:1rem;
-    }
+
     html,
     body{
         margin: 0;
+        padding:0;
         color: #555;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, san-serif;
         font-size: 18px;
         line-height: 1.4;
-        /*remove margin for the main div that Gatsby mounts into*/
     }
     > div {
         margin-top:0;
@@ -55,13 +53,18 @@ const Layout = ({ children }) => {
     <Helmet>
         <html lang="en" />
         <title>{title}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content={description} />
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     </Helmet>
     <Header />
     <main css={css `
         margin: 2rem auto 4rem;
-        max-width:90vm;
-        width: 550px;
+        max-width:100%;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
     `}>
         {children }</main>
     </>

@@ -15,7 +15,9 @@ const PostPreview = ({ post }) => (
             margin-top: 1rem;
         }
         `}>
-            <Link to={post.slug} css={css ` margin: 1rem 1rem 0 0; width:100px; `}>
+            <Link to={post.slug} css={css` 
+            margin: 0.5rem 1rem 0 0; 
+            width:100px;`}>
             <Image
         css={css`
           * {
@@ -27,7 +29,10 @@ const PostPreview = ({ post }) => (
       />
     </Link>
     <div>
-      <h3>
+      <h3
+      css={css`
+      margin-top: 1rem - 0.5rem;
+      `}>
         <Link to={post.slug}>{post.title}</Link>
       </h3>
       <p>{post.excerpt}</p>

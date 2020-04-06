@@ -12,7 +12,7 @@ export default () => {
         <>
         <Hero />
     <Layout>
-   <h2>Read my blogs</h2>
+   <h2>Read our blogs</h2>
    {posts.map(post => (
       <PostPreview key={post.slug} post={post}/>
    ))}
